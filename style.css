@@ -18,16 +18,38 @@ body {
 }
 
 /* *header section styling start here */
-
+#hero {
+  background-image: url(./img/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
 #header {
+  padding: 2.5rem 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  margin: 0 auto;
+}
+#header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding: 1.5rem 1rem;
 }
 #header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.75rem;
+  border-radius: 10px;
 }
 
 #header .logo img {
@@ -45,7 +67,7 @@ body {
 #header #nav-bar a {
   text-decoration: none;
 
-  color: #252525;
+  color: white;
   font-weight: 400;
   font-size: 1rem;
   padding: 0.5rem;
@@ -71,10 +93,10 @@ body {
 }
 /*  media query */
 @media (min-width: 48.75rem) {
-  #header {
+  #header .container {
     flex-direction: row;
   }
-  #header #nav-bar {
+  #header .container #nav-bar {
     justify-content: flex-end;
   }
   #header #nav-bar a {
@@ -88,15 +110,6 @@ body {
 
 /* *hero section styling sart here */
 
-#hero {
-  background-image: url(./img/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
 #hero:after {
   content: "";
   position: absolute;
@@ -113,7 +126,18 @@ body {
   left: 50%;
   color: white;
   transform: translate(-50%, -50%);
-  padding: 1.5rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  padding: 5rem;
+}
+.hero-content h1 {
+  font-weight: 700;
+  font-size: 3rem;
 }
 
-/* !hero section styling end here */
+/* !hero section styling end here */ ;
