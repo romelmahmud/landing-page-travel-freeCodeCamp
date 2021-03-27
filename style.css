@@ -8,6 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -23,7 +24,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin: 2.5rem 1rem;
+  padding: 1.5rem 1rem;
 }
 #header .logo {
   text-align: center;
@@ -68,7 +69,7 @@ body {
 #header #nav-bar a.nav-btn:hover {
   background-color: #d83636;
 }
-/*? media query */
+/*  media query */
 @media (min-width: 48.75rem) {
   #header {
     flex-direction: row;
@@ -83,5 +84,36 @@ body {
     margin-right: 2.25rem;
   }
 }
-
 /* !header section styling end here */
+
+/* *hero section styling sart here */
+
+#hero {
+  background-image: url(./img/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+#hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.hero-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem 1rem;
+}
+
+/* !hero section styling end here */
