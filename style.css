@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
 }
 
-/* *header section stying start here */
+/* *header section styling start here */
 
 #header {
   display: flex;
@@ -36,18 +36,22 @@ body {
 #header #nav-bar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 #header #nav-bar a {
   text-decoration: none;
+
   color: #252525;
   font-weight: 400;
   font-size: 1rem;
   padding: 0.5rem;
   transition: color 250ms ease-in-out;
+}
+#header #nav-bar a:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 #header #nav-bar a:not(:last-child):hover {
@@ -64,7 +68,7 @@ body {
 #header #nav-bar a.nav-btn:hover {
   background-color: #d83636;
 }
-/* media query */
+/*? media query */
 @media (min-width: 48.75rem) {
   #header {
     flex-direction: row;
@@ -76,8 +80,8 @@ body {
     padding: 0;
   }
   #header #nav-bar a:not(:last-child) {
-    margin-right: 2.5rem;
+    margin-right: 2.25rem;
   }
 }
 
-/* *header section stying end here */
+/* !header section styling end here */
