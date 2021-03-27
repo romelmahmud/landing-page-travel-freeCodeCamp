@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+/* *header section stying start here */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 2.5rem 1rem;
+}
+#header .logo {
+  text-align: center;
+}
+
+#header .logo img {
+  width: 8rem;
+  margin-bottom: 0.75rem;
+}
+#header #nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+#header #nav-bar a {
+  text-decoration: none;
+  color: #252525;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: color 250ms ease-in-out;
+}
+
+#header #nav-bar a:not(:last-child):hover {
+  color: #bc2526;
+}
+
+#header #nav-bar a.nav-btn {
+  padding: 0.75rem 1.25rem;
+  background-color: #bc2526;
+  color: white;
+  border-radius: 25px;
+  transition: all 250ms ease-in-out;
+}
+#header #nav-bar a.nav-btn:hover {
+  background-color: #d83636;
+}
+/* media query */
+@media (min-width: 48.75rem) {
+  #header {
+    flex-direction: row;
+  }
+  #header #nav-bar {
+    justify-content: flex-end;
+  }
+  #header #nav-bar a {
+    padding: 0;
+  }
+  #header #nav-bar a:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+
+/* *header section stying end here */
