@@ -90,6 +90,9 @@ body {
   border-radius: 25px;
   transition: all 250ms ease-in-out;
 }
+.hero-btn-container a.hero-btn:hover {
+  background-color: #d83636;
+}
 #header #nav-bar a.nav-btn:hover {
   background-color: #d83636;
 }
@@ -163,4 +166,82 @@ body {
     font-size: 4.75rem;
   }
 }
-/* !hero section styling end here */ ;
+/* !hero section styling end here */
+
+/* *destination section styling end here */
+#destination {
+  padding: 3.5rem 1rem;
+}
+#destination h2 {
+  font-size: 2.25rem;
+  text-align: center;
+  color: #303370;
+  margin-bottom: 3.5rem;
+}
+
+.destination-card {
+  width: 95%;
+  height: auto;
+
+  overflow: hidden;
+
+  margin: 0 auto;
+
+  border-radius: 20px;
+  transition: all 250ms ease-in-out;
+}
+.destination-card:hover {
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.55);
+}
+.destination-card:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.destination-card img {
+  width: 100%;
+  display: inline-block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  position: relative;
+  transition: all 350ms ease-in-out;
+  z-index: 100;
+}
+.destination-card img:hover {
+  scale: 1.075;
+}
+
+.card-content {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: -8px;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 1.5rem 1.5rem;
+  color: white;
+}
+.card-content,
+.card-content .destination-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.destination-title h4 {
+  font-weight: 400;
+  margin-left: 0.75rem;
+  font-size: 1.25rem;
+}
+.destination-title i {
+  color: #d2d2d2;
+}
+.destination-price h4 {
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+,
+.destination-price p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* !destination section styling end here */
