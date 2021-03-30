@@ -26,6 +26,8 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
 }
 #header {
   padding: 2.5rem 1rem;
@@ -118,16 +120,6 @@ body {
 
 /* *hero section styling sart here */
 
-#hero:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-}
 .hero-container {
   position: absolute;
   top: 50%;
@@ -287,3 +279,25 @@ body {
   color: #d83636;
 }
 /* !Blog section styling end here */
+
+/* *contact section styling start here */
+#contact {
+  background-image: url(./img/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+}
+.contact {
+  position: relative;
+}
+
+#contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  z-index: 100;
+}
+/* !contact section styling end here */
