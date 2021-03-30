@@ -282,15 +282,13 @@ body {
 
 /* *contact section styling start here */
 #contact {
-  background-image: url(./img/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
+  padding: 3rem 0;
+  background-image: url(./img/shifaaz-shamoon-Rl9l9mL6Pvs-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: darken;
-}
-.contact {
-  position: relative;
 }
 
 #contact .container {
@@ -299,5 +297,47 @@ body {
   align-items: center;
   padding: 3rem 1rem;
   z-index: 100;
+}
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem 2rem;
+  border-radius: 5px;
+}
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+.contact-form textarea {
+  font-size: 1.15rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form .form-btn {
+  padding: 1.15em 1em;
+
+  background-color: #bc2526;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.contact-form .form-btn:hover {
+  background-color: #d83636;
 }
 /* !contact section styling end here */
