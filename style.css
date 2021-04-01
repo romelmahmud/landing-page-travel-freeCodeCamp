@@ -276,6 +276,31 @@ body {
 .blog-card-container {
   margin-bottom: 3rem;
 }
+.blog-card-container h3 {
+  margin-left: 5%;
+  font-size: 1.75rem;
+  color: #161616;
+  margin-bottom: 1.5rem;
+}
+.feature-blog-container {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.feature-blog-container:after {
+  content: "";
+  width: 80%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  background-color: grey;
+  position: absolute;
+  bottom: -1.5rem;
+}
+.recent-blog-container {
+  margin-top: 3.5rem;
+}
 .blog-card {
   width: 90%;
   margin: 0 auto;
@@ -296,7 +321,7 @@ body {
 }
 
 .blog-content h4 {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   color: #161616;
   margin: 1rem 0;
 }
@@ -351,6 +376,7 @@ body {
 @media (min-width: 48.75rem) {
   .contact-form {
     width: 75%;
+    padding: 3rem 2.75rem;
   }
 }
 .contact-form input,
