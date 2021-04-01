@@ -29,6 +29,7 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
 }
+
 #header {
   padding: 2.5rem 1rem;
   position: absolute;
@@ -165,6 +166,13 @@ body {
   padding: 3.5rem 1rem;
   margin-bottom: 2rem;
 }
+
+@media (min-width: 48.75rem) {
+  .destination-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 #destination h2,
 #blog h2,
 #contact h2 {
@@ -176,7 +184,6 @@ body {
 
 .destination-card {
   width: 95%;
-  height: auto;
 
   overflow: hidden;
 
@@ -192,16 +199,21 @@ body {
 .destination-card:not(:last-child) {
   margin-bottom: 2rem;
 }
+@media (min-width: 48.75rem) {
+  .destination-card {
+    width: 45%;
+    margin-bottom: 0;
+  }
+}
 .destination-card img {
   width: 100%;
-  display: inline-block;
 
   overflow: hidden;
 
   transition: all 400ms ease-in;
 }
 .destination-card img:hover {
-  scale: 1.05;
+  -webkit-transform: scale(1.05);
 }
 
 .card-content {
@@ -294,6 +306,12 @@ body {
 #contact h2 {
   color: white;
   padding-top: 2rem;
+  margin-bottom: 0;
+}
+@media (min-width: 48.75rem) {
+  #contact h2 {
+    margin-bottom: 3rem;
+  }
 }
 
 #contact .container {
@@ -304,9 +322,15 @@ body {
   z-index: 100;
 }
 .contact-form {
+  width: 90%;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2rem 2rem;
   border-radius: 5px;
+}
+@media (min-width: 48.75rem) {
+  .contact-form {
+    width: 75%;
+  }
 }
 .contact-form input,
 .contact-form textarea {
