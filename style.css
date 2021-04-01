@@ -166,7 +166,8 @@ body {
   margin-bottom: 2rem;
 }
 #destination h2,
-#blog h2 {
+#blog h2,
+#contact h2 {
   font-size: 2.25rem;
   text-align: center;
   color: #303370;
@@ -290,6 +291,10 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: darken;
 }
+#contact h2 {
+  color: white;
+  padding-top: 2rem;
+}
 
 #contact .container {
   display: flex;
@@ -341,3 +346,68 @@ body {
   background-color: #d83636;
 }
 /* !contact section styling end here */
+
+/* * footer section styling start here */
+.footer {
+  padding: 2.25rem 0;
+}
+.footer .container {
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.social-media .icons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.75rem;
+}
+.social-media .follow {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.icon {
+  margin-right: 0.75rem;
+  cursor: pointer;
+  transition: color 250ms ease-in-out;
+}
+.icon a {
+  color: #161616;
+}
+.icon i {
+  font-size: 1.5rem;
+}
+.icon i:hover {
+  color: #bc2526;
+}
+
+.container .copyright,
+.container p {
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+.copyright span {
+  color: #303370;
+  font-weight: 400;
+}
+.copyright .red {
+  color: #bc2526;
+}
+p.author {
+  font-size: 0.75rem;
+}
+.author a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #303370;
+  transition: color 250ms ease-in-out;
+}
+.author a:hover {
+  color: #bc2526;
+}
+
+/* ! footer section styling end here */
