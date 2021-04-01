@@ -5,17 +5,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root {
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+}
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
 .container {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
-@media (min-width: 48.75rem) {
+@media (min-width: 576px) {
   .container {
     width: 100%;
     max-width: 65rem;
@@ -80,7 +85,7 @@ body {
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 48.75rem) {
+@media (min-width: 768px) {
   #header #nav-bar a {
     margin-bottom: 0;
   }
@@ -109,7 +114,7 @@ body {
   background-color: #d83636;
 }
 /*  media query */
-@media (min-width: 48.75rem) {
+@media (min-width: 768px) {
   #header .container {
     flex-direction: row;
   }
@@ -152,13 +157,19 @@ body {
   color: #d83636;
 }
 
-@media (min-width: 48.75rem) {
+@media (min-width: 768px) {
   .hero-container {
     align-items: center;
   }
   .hero-content {
     text-align: center;
   }
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
   .hero-content h1 {
     font-size: 4.75rem;
   }
@@ -171,7 +182,7 @@ body {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 48.75rem) {
+@media (min-width: 768px) {
   .destination-cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -187,26 +198,32 @@ body {
 }
 
 .destination-card {
-  width: 95%;
+  width: 85%;
 
   overflow: hidden;
 
   margin: 0 auto;
 
-  border-radius: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-bottom: 2rem;
   transition: all 250ms ease-in-out;
 }
 .destination-card:hover {
   -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.55);
 }
-.destination-card:not(:last-child) {
-  margin-bottom: 2rem;
-}
-@media (min-width: 48.75rem) {
+
+@media (min-width: 768px) {
   .destination-card {
     width: 45%;
-    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .destination-card {
+    width: 30%;
   }
 }
 .destination-card img {
