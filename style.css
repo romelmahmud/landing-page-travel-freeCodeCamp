@@ -12,29 +12,28 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 65rem;
+  width: 90%;
   margin: 0 auto;
 }
-
+@media (min-width: 48.75rem) {
+  .container {
+    width: 100%;
+    max-width: 65rem;
+  }
+}
 /* *header section styling start here */
 #hero {
   background-image: url(./img/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
+  padding: 3.5rem;
 }
 
 #header {
-  padding: 2.5rem 1rem;
-  position: absolute;
-  top: 0;
-  left: 0;
   background-color: transparent;
   width: 100%;
   margin: 0 auto;
@@ -77,6 +76,16 @@ body {
   padding: 0.5rem;
   transition: color 250ms ease-in-out;
 }
+#header #nav-bar a {
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 48.75rem) {
+  #header #nav-bar a {
+    margin-bottom: 0;
+  }
+}
+
 #header #nav-bar a:not(:last-child) {
   margin-right: 0.5rem;
 }
@@ -122,17 +131,12 @@ body {
 /* *hero section styling sart here */
 
 .hero-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   color: white;
-  transform: translate(-50%, -50%);
-
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  margin-top: 4.5rem;
+  text-align: center;
 }
 .video-container {
   margin-bottom: 3rem;
