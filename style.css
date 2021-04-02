@@ -5,12 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
-}
+
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -26,7 +21,7 @@ body {
     max-width: 65rem;
   }
 }
-/* *header section styling start here */
+/*  hero && header section styling start here */
 #hero {
   background-image: url(./img/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
   background-size: cover;
@@ -131,9 +126,6 @@ body {
     margin-bottom: 0;
   }
 }
-/* !header section styling end here */
-
-/* *hero section styling sart here */
 
 .hero-container {
   color: white;
@@ -174,9 +166,9 @@ body {
     font-size: 4.75rem;
   }
 }
-/* !hero section styling end here */
+/*  hero && header section styling end here */
 
-/* *destination section styling end here */
+/* destination section styling end here */
 #destination {
   padding: 3.5rem 1rem;
   margin-bottom: 2rem;
@@ -272,9 +264,9 @@ body {
   font-weight: 300;
 }
 
-/* !destination section styling end here */
+/* destination section styling end here */
 
-/* *Blog section styling end here */
+/* Blog section styling end here */
 #blog .container {
   padding: 0 1rem 3.5rem;
 }
@@ -384,9 +376,9 @@ body {
   color: #d83636;
   border-bottom: 1px solid #bc2526;
 }
-/* !Blog section styling end here */
+/* Blog section styling end here */
 
-/* *contact section styling start here */
+/* contact section styling start here */
 #contact {
   padding: 3rem 0;
   background-image: url(./img/shifaaz-shamoon-Rl9l9mL6Pvs-unsplash.jpg);
@@ -463,9 +455,9 @@ body {
 .contact-form .form-btn:hover {
   background-color: #d83636;
 }
-/* !contact section styling end here */
+/* contact section styling end here */
 
-/* * footer section styling start here */
+/* footer section styling start here */
 .footer {
   padding: 2.25rem 0;
 }
@@ -528,4 +520,4 @@ p.author {
   color: #bc2526;
 }
 
-/* ! footer section styling end here */
+/* footer section styling end here */
