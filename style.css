@@ -25,7 +25,8 @@ body {
 }
 /*  hero && header section styling start here */
 #hero {
-  background-image: url(./img/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
+  background-image: url(https://i.postimg.cc/LXn0mspd/hero.jpg);
+  /* photo credit: pietro-de-grandi-T7K4aEPoGGk-unsplash */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -382,7 +383,8 @@ body {
 /* contact section styling start here */
 #contact {
   padding: 3rem 0;
-  background-image: url(./img/shifaaz-shamoon-Rl9l9mL6Pvs-unsplash.jpg);
+  background-image: url(https://i.postimg.cc/jSb9yKzN/contact.jpg);
+  /* photo credit: shifaaz-shamoon-Rl9l9mL6Pvs-unsplash  */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -530,6 +532,7 @@ p.author {
   width: 100%;
   margin: 0 auto;
   background-color: #0d0d0d;
+  opacity: 0.95;
 
   z-index: 1000;
   height: auto;
