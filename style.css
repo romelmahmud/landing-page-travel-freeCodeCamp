@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -34,7 +36,6 @@ body {
 }
 
 #header {
-  background-color: transparent;
   width: 100%;
   margin: 0 auto;
 }
@@ -446,10 +447,11 @@ body {
   outline: none;
   color: white;
   font-weight: 400;
-  font-size: 0.875rem;
-  text-transform: uppercase;
+  font-size: 1rem;
+
   transition: all 250ms ease-in-out;
   cursor: pointer;
+  width: 50%;
 }
 
 .contact-form .form-btn:hover {
@@ -521,3 +523,15 @@ p.author {
 }
 
 /* footer section styling end here */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #0d0d0d;
+
+  z-index: 1000;
+  height: auto;
+  padding: 1rem 1rem;
+}

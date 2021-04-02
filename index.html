@@ -18,13 +18,16 @@
     <header id="header">
       <div class="container">
         <div class="logo">
-          <img src="./img/logo.png" alt="logo" id="header-img" />
+          <a href="#">
+
+            <img src="./img/logo.png" alt="logo" id="header-img" />
+          </a>
         </div>
         <nav id="nav-bar">
-          <a href="" class="nav-link">Destination</a>
-          <a href="" class="nav-link">Blog</a>
-          <a href="" class="nav-link">Gallary</a>
-          <a href="" class="nav-btn btn">Book now</a>
+          <a href="#destination" class="nav-link">Destination</a>
+          <a href="#blog" class="nav-link">Blog</a>
+          <a href="#contact" class="nav-link">Contact Us</a>
+          <a href="#contact" class="nav-btn btn">Book now</a>
         </nav>
       </div>
     </header>
@@ -35,7 +38,7 @@
           <h1>Explore <span>Beautifull</span> World</h1>
         </div>
         <div class="video-container">
-          <iframe
+          <iframe id="video"
             src="https://www.youtube.com/embed/_e_hEWZP8mU"
             title="YouTube video player"
             frameborder="0"
@@ -45,7 +48,7 @@
         </div>
 
         <div class="hero-btn-container">
-          <a href="" class="hero-btn btn">Book now</a>
+          <a href="#contact" class="hero-btn btn">Book now</a>
         </div>
       </div>
     </section>
@@ -248,9 +251,9 @@
         <h2>Contact Us</h2>
         <div class="container">
           <div class="contact-form">
-            <form action="">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
               <input type="text" placeholder="Name" />
-              <input type="email" name="" id="" placeholder="Email" />
+              <input type="email"  id="email" placeholder="Email" required/>
               <textarea
                 name=""
                 id=""
@@ -258,7 +261,8 @@
                 rows="10"
                 placeholder="Your massege"
               ></textarea>
-              <button class="form-btn">Contact Us</button>
+              <input type="submit" value="Submit" id="submit" class="form-btn">
+              
             </form>
           </div>
         </div>
@@ -290,5 +294,21 @@
       </div>
     </footer>
     <!--footer section start here-->
+    <script>
+      window.onscroll = function() {myFunction()};
+
+const header = document.getElementById("header");
+let sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+   
+    header.classList.add("sticky");
+    
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+    </script>
   </body>
 </html>
