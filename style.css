@@ -35,6 +35,9 @@ body {
   background-blend-mode: darken;
   padding: 3.5rem;
 }
+#hero h2 {
+  display: none;
+}
 
 #header {
   width: 100%;
